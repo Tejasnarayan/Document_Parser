@@ -31,10 +31,10 @@ def info(df,string):
                  'City/Town': address_city,
                   'State/Province/Region':address_state,
                   'Zip/Postal Code':city_code,
-                  'Coverage_A':coverage_a,
-                  'Coverage_B':coverage_b,
-                  'Coverage_C':coverage_c,
-                  'Coverage_D':coverage_d}])
+                  'Coverage A':coverage_a,
+                  'Coverage B':coverage_b,
+                  'Coverage C':coverage_c,
+                  'Coverage D':coverage_d}])
   df=df.append(df)
   return df
 
@@ -60,10 +60,10 @@ def details_df(string):
                  'City/Town': address_city,
                   'State/Province/Region':address_state,
                   'Zip/Postal Code':city_code,
-                  'Coverage_A':coverage_a,
-                  'Coverage_B':coverage_b,
-                  'Coverage_C':coverage_c,
-                  'Coverage_D':coverage_d}])
+                  'Coverage A':coverage_a,
+                  'Coverage B':coverage_b,
+                  'Coverage C':coverage_c,
+                  'Coverage D':coverage_d}])
 
   return df
 df=pd.DataFrame()  
