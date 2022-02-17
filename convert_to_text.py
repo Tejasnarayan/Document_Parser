@@ -4,11 +4,10 @@ import pandas as pd
 #Using pytesseract-OCR, converted image to text
 pytesseract.pytesseract.tesseract_cmd = r'C:\Users\thejas.n\AppData\Local\Programs\Tesseract-OCR\tesseract'
 string1 = pytesseract.image_to_string(r'E:\Projects\Document_Parser\img01.jpg')
-string2 = pytesseract.image_to_string(r'E:\Projects\Document_Parser\img02.jpg')
 
 #coversion of doc2_1 to csv
 df=pd.DataFrame()
-def details_df(df,string):
+def info(df,string):
   temp=string.split('\n')
   temp=list(filter(lambda x: x!='',temp))
   name=temp[1].split(':')[1]
@@ -36,8 +35,8 @@ def details_df(df,string):
                   'Coverage_D':coverage_d}])
   df=df.append(df1)
   return df
-  
-df1 = details_df(df,string1)
+
+df1 = info(df,string1)
 df1.to_csv('doc2_1.csv')
 
 

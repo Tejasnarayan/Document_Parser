@@ -6,7 +6,7 @@ string2 = pytesseract.image_to_string(r'E:\Projects\Document_Parser\img02.jpg')
 
 #coversion of doc2_2 to csv
 df=pd.DataFrame()
-def details_df(df,string):
+def info(df,string):
   temp=string.split('\n')
   temp=list(filter(lambda x: x!='',temp))
   name=temp[1].split(':')[1]
@@ -35,5 +35,5 @@ def details_df(df,string):
   df=df.append(df1)
   return df
 
-df1 = details_df(df,string2)
+df1 = info(df,string2)
 df1.to_csv('doc2_2.csv')
