@@ -1,12 +1,10 @@
 import pytesseract
 import pandas as pd
 
-#Using pytesseract-OCR, converted image to text
 pytesseract.pytesseract.tesseract_cmd = r'C:\Users\thejas.n\AppData\Local\Programs\Tesseract-OCR\tesseract'
-string1 = pytesseract.image_to_string(r'E:\Projects\Document_Parser\img01.jpg')
 string2 = pytesseract.image_to_string(r'E:\Projects\Document_Parser\img02.jpg')
 
-#coversion of doc2_1 to csv
+#coversion of doc2_2 to csv
 df=pd.DataFrame()
 def details_df(df,string):
   temp=string.split('\n')
@@ -16,7 +14,7 @@ def details_df(df,string):
   address_street=temp[4]
   address_city=temp[5]
   address_state=temp[6]
-  city_code=temp[7].split(':')[1]
+  city_code=temp[7].split('-')[1]
   coverage_a=temp[9].split('-')[-1]
   coverage_b=temp[10].split('-')[-1]
   coverage_c=temp[11].split('-')[-1]
@@ -36,8 +34,6 @@ def details_df(df,string):
                   'Coverage_D':coverage_d}])
   df=df.append(df1)
   return df
-  
-df1 = details_df(df,string1)
-df1.to_csv('doc2_1.csv')
 
-
+df1 = details_df(df,string2)
+df1.to_csv('doc2_2.csv')

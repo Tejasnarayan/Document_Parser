@@ -1,24 +1,2 @@
-0
-"Summary page
-
-NAMED INSURED: Daphne Jakubowski IV
-
-POLICY NUMBER: ABDG10UYJ7C
-
-ADDRESS:
-
-1106 Indianapolis Rd,
-Greencastle,
-
-lowa,
-
-Code: 46135
-
-COVERAGE LIMIT DETAILS:
-
-COVERAGE A - DWELLING $1,676.00
-COVERAGE B - $1789032.00
-
-COVERAGE C - PERSONAL PROPERTY $41238.00
-COVERAGE D - LOSS OF USE $8876.00
-"
+,Name,Policy,Address_Street,Address_City,Address_State,Address_City_Code,Coverage_A,Coverage_B,Coverage_C,Coverage_D
+0, Daphne Jakubowski IV, ABDG10UYJ7C,"1106 Indianapolis Rd,","Greencastle,","lowa,", 46135," DWELLING $1,676.00", $1789032.00, PERSONAL PROPERTY $41238.00, LOSS OF USE $8876.00
