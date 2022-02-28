@@ -1,6 +1,6 @@
 import PyPDF2
 	
-pdfFileObj = open('Document 4.2 .pdf', 'rb')
+pdfFileObj = open('Document 1.2.pdf', 'rb')
 pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
 print(pdfReader.numPages)
 	
