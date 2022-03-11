@@ -1,4 +1,5 @@
 import PyPDF2
+import pandas as pd
 	
 pdfFileObj = open('Document 1.2.pdf', 'rb')
 pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
@@ -8,3 +9,5 @@ pageObj = pdfReader.getPage(0)
 print(pageObj.extractText())
 	
 pdfFileObj.close()
+
+
