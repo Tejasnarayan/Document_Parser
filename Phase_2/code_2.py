@@ -67,13 +67,13 @@ doc8 = pytesseract.image_to_string(r'E:\Projects\Document_Parser\Phase_2\image8.
 
 
 docs = doc1+doc2+doc3+doc4+doc5+doc6+doc7+doc8
-'''
+
 text_file = open("E:\Projects\Document_Parser\Phase_2\Doc.txt", "w",encoding="utf-8") 
 #write string to file
 text_file.write(docs)
 #close file
 text_file.close()
-'''
+
 from spacy.tokens import DocBin
 from tqdm import tqdm
 import spacy
